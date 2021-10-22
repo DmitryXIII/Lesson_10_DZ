@@ -36,7 +36,7 @@ public class Lesson_10_DZ {
         phoneBook.addPhoneNumberOfPerson("Петров", "222-333");
         phoneBook.addPhoneNumberOfPerson("Иванов", "333-444");
 
-        phoneBook.getPhoneNumberOfPerson("Петров");
+        phoneBook.getPhoneNumberOfPerson("Иванов");
     }
 
     /**
