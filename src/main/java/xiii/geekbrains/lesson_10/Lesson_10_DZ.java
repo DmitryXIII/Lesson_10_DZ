@@ -18,7 +18,6 @@ import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Lesson_10_DZ {
     public static void main(String[] args) {
@@ -45,7 +44,7 @@ public class Lesson_10_DZ {
      * Метод, возвращающий массив слов из переданной строки (алгоритм применения BreakIterator честно нагуглил:) )
      */
     public static String[] getWordsFromString(String text) {
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<String> words = new ArrayList<>();
         BreakIterator breakIterator = BreakIterator.getWordInstance();
         breakIterator.setText(text);
         int lastIndex = breakIterator.first();
@@ -80,7 +79,7 @@ public class Lesson_10_DZ {
      * Получение списка уникальных слов из массива слов
      */
     public static void getListOfUnicWords(String[] arrayOfWords) {
-        Set<String> listOfUnicWords = new HashSet<>();
+        HashSet<String> listOfUnicWords = new HashSet<>();
         for (int i = 0; i < arrayOfWords.length; i++) {
             listOfUnicWords.add(arrayOfWords[i]);
         }
