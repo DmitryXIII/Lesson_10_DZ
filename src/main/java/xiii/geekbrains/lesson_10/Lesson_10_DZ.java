@@ -16,6 +16,8 @@ package xiii.geekbrains.lesson_10;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class Lesson_10_DZ {
@@ -78,7 +80,7 @@ public class Lesson_10_DZ {
      * Получение списка уникальных слов из массива слов
      */
     public static void getListOfUnicWords(String[] arrayOfWords) {
-        TreeSet<String> listOfUnicWords = new TreeSet<>();
+        Set<String> listOfUnicWords = new HashSet<>();
         for (int i = 0; i < arrayOfWords.length; i++) {
             listOfUnicWords.add(arrayOfWords[i]);
         }
