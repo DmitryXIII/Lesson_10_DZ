@@ -16,16 +16,12 @@ package xiii.geekbrains.lesson_10;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Lesson_10_DZ {
     public static void main(String[] args) {
         String[] arrayOfWords = getWordsFromString("Создать массив с набором слов (10-20 слов, должны встречаться повторяющиеся)." +
                 "Найти и вывести список уникальных слов, из которых состоит массив (дубликаты не считаем)." +
                 "Посчитать, сколько раз встречается каждое слово.");
-
-        getListOfUnicWords(arrayOfWords);
 
         String countThisWord = "МАССИВ";
         System.out.println("Слово \"" + countThisWord + "\" в массиве встречается " + countThisWord(arrayOfWords, countThisWord) + " раз");
@@ -73,21 +69,5 @@ public class Lesson_10_DZ {
             }
         }
         return counter;
-    }
-
-    /**
-     * Получение списка уникальных слов из массива слов
-     */
-    public static void getListOfUnicWords(String[] arrayOfWords) {
-        HashSet<String> listOfUnicWords = new HashSet<>();
-        for (int i = 0; i < arrayOfWords.length; i++) {
-            listOfUnicWords.add(arrayOfWords[i]);
-        }
-        System.out.println("Список уникальных слов из массива: ");
-        for (String s :
-                listOfUnicWords) {
-            System.out.println(s);
-        }
-        System.out.println("");
     }
 }
