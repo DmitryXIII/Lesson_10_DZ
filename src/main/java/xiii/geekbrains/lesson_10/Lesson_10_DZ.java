@@ -27,6 +27,8 @@ public class Lesson_10_DZ {
         String countThisWord = "МАССИВ";
         System.out.println("Слово \"" + countThisWord + "\" в массиве встречается " + countThisWord(arrayOfWords, countThisWord) + " раз");
 
+        getUnicWordsList(arrayOfWords);
+       
         //телефонная книга
         System.out.println("=======================================================");
         PhoneBook phoneBook = new PhoneBook();
