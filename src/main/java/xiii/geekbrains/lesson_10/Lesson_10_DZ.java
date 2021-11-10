@@ -83,10 +83,6 @@ public class Lesson_10_DZ {
             listOfUnicWords.add(arrayOfWords[i]);
         }
         System.out.println("Список уникальных слов из массива: ");
-        for (String s :
-                listOfUnicWords) {
-            System.out.println(s);
-        }
-        System.out.println("");
+        listOfUnicWords.foreach(System.out.::println);
     }
 }
