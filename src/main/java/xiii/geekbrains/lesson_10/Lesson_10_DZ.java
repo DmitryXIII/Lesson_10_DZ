@@ -75,7 +75,7 @@ public class Lesson_10_DZ {
     /**
      * Получение списка уникальных слов из массива слов
      */
-    public static void getListOfUnicWords(String[] arrayOfWords) {
+    public static void getUnicWordsList(String[] arrayOfWords) {
         HashSet<String> listOfUnicWords = new HashSet<>();
         for (int i = 0; i < arrayOfWords.length; i++) {
             listOfUnicWords.add(arrayOfWords[i]);
